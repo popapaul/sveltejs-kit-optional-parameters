@@ -7,6 +7,6 @@
 </svelte:head>
 
 <div class="text-column">
-	<h1>Content page with path: {$page.params.content}</h1>
+	<h1>Content page with path: {$page.params.content} {$page.params.year ?? "2023"}</h1>
 </div>
 

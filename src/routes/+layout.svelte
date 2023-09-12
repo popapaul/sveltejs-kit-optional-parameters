@@ -10,7 +10,7 @@
 	<main>
 		<slot />
 		<div>
-		Optional params:
+		Optional parameters:
 			<ul>
 				<li>culture: {$page.params.culture}</li>
 				<li>year: {$page.params.year}</li>

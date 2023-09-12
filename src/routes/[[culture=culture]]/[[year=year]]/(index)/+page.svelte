@@ -17,15 +17,20 @@
 				<img src={welcome_fallback} alt="Welcome" />
 			</picture>
 		</span>
-
-		to your new<br />SvelteKit app
 	</h1>
-
+<div>
 	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
+		See <b>Content</b> and <b>Program</b> submenus<br/>
 	</h2>
+	<p>
+		Notice that when the link doesn`t have culture, but has year,<br/> the <b>Program 2021</b> page will not be matched,<br/> instead it will go to rest parameter.
+	</p>
 
-	<Counter />
+	<p>
+    Additionally, when changing [...content] rest paramater  to [content] parameter. <br>
+		then <b>Content 2021</b> also breaks;
+	</p>
+</div>
 </section>
 
 <style>

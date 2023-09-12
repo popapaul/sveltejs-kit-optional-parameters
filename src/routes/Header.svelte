@@ -23,7 +23,7 @@
 				<a href="/content">Content</a>
 					<ul class="submenu">
 							<li>
-								<a href="/content" title="no culture, no year">2023 ✔</a>
+								<a href="/en/content" title="en culture, no year">2023 ✔</a>
 							</li>
 							<li>		
 								<a href="/en/2022/content" title="en culture, 2022 year">2022 ✔</a>
