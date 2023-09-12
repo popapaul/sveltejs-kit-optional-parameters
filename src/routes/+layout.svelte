@@ -1,6 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	import {page} from "$app/stores"
 </script>
 
 <div class="app">
@@ -8,7 +9,15 @@
 
 	<main>
 		<slot />
+		<div>
+		Optional params:
+			<ul>
+				<li>culture: {$page.params.culture}</li>
+				<li>year: {$page.params.year}</li>
+			</ul>
+		</div>
 	</main>
+
 
 	<footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>

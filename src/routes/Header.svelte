@@ -20,8 +20,33 @@
 				<a href="/">Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+				<a href="/content">Content</a>
+					<ul class="submenu">
+							<li>
+								<a href="/content" title="no culture, no year">2023 ✔</a>
+							</li>
+							<li>		
+								<a href="/en/2022/content" title="en culture, 2022 year">2022 ✔</a>
+							</li>
+								<li>		
+								<a href="/2021/content" title="no culture, 2021 year">2021 ✔</a>
+							</li>
+					</ul>
 			</li>
+
+				<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+					<a href="/program" title="no culture, no year">Program</a>
+					<ul class="submenu">
+							<li>
+								<a href="/en/program" title="en culture, no year">2023 ✔</a>
+							</li>
+							<li>		
+								<a href="/en/2022/program" title="en culture, 2022 year">2022 ✔</a>
+							</li>
+								<li>		
+								<a href="/2021/program" title="no culture, 2021 year">2021 x</a>
+							</li>
+					</ul>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
@@ -36,6 +61,22 @@
 </header>
 
 <style>
+
+.submenu{
+	opacity:0;
+	pointer-events:none;
+	display:flex;
+	flex-direction:column;
+	transition: 0.3s;
+	height:auto;
+}
+li:hover .submenu{
+	opacity:1;
+	pointer-events:all;
+}
+.submenu li{
+	padding: 4px 0;
+}
 	header {
 		display: flex;
 		justify-content: space-between;
